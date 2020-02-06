@@ -1,0 +1,501 @@
+2020-02-07 01:04:33.958  INFO 6918 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c923b830] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2020-02-07 01:04:34.761  INFO 6918 --- [           main] c.z.m.MicroServicesConsumerUKApplication : No active profile set, falling back to default profiles: default
+2020-02-07 01:04:39.919  INFO 6918 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cb835dbe-a5ae-36b9-87fa-3fc1a2b1ec32
+2020-02-07 01:04:40.189  INFO 6918 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$80bbc6b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-07 01:04:40.365  INFO 6918 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c923b830] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-07 01:04:41.224  INFO 6918 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-02-07 01:04:41.302  INFO 6918 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-07 01:04:41.318  INFO 6918 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-02-07 01:04:41.757  INFO 6918 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-07 01:04:41.758  INFO 6918 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6868 ms
+2020-02-07 01:04:43.690  WARN 6918 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-02-07 01:04:43.691  INFO 6918 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-02-07 01:04:43.700  WARN 6918 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-02-07 01:04:43.704  INFO 6918 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-02-07 01:04:44.345  INFO 6918 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-07 01:04:47.197  INFO 6918 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-02-07 01:04:47.371  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-02-07 01:04:48.864  INFO 6918 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-02-07 01:04:48.864  INFO 6918 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-02-07 01:04:49.370  INFO 6918 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-02-07 01:04:49.379  INFO 6918 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-02-07 01:04:50.010  INFO 6918 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-02-07 01:04:50.054  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-02-07 01:04:50.055  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-02-07 01:04:50.058  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-02-07 01:04:50.059  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-02-07 01:04:50.059  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-02-07 01:04:50.059  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-02-07 01:04:50.059  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-02-07 01:04:50.581  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-02-07 01:04:50.588  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-02-07 01:04:50.595  INFO 6918 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-02-07 01:04:50.604  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1581017690602 with initial instances count: 0
+2020-02-07 01:04:50.608  INFO 6918 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application KAFKA-SALES-SERVICE with eureka with status UP
+2020-02-07 01:04:50.609  INFO 6918 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1581017690609, current=UP, previous=STARTING]
+2020-02-07 01:04:50.616  INFO 6918 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_KAFKA-SALES-SERVICE/10.0.2.15:kafka-sales-service:8085: registering service...
+2020-02-07 01:04:50.876  INFO 6918 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumerGroup11
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.zekelabs.microserviceskafka.deserializer.CustomDeserializer
+
+2020-02-07 01:04:51.455  INFO 6918 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-07 01:04:51.466  INFO 6918 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-07 01:04:51.679  INFO 6918 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_KAFKA-SALES-SERVICE/10.0.2.15:kafka-sales-service:8085 - registration status: 204
+2020-02-07 01:04:52.596  INFO 6918 --- [           main] org.apache.kafka.clients.Metadata        : Cluster ID: lPdIPz4LRguGkkkYMiE3Yw
+2020-02-07 01:04:52.676  INFO 6918 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumerGroup11
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.zekelabs.microserviceskafka.deserializer.CustomDeserializer
+
+2020-02-07 01:04:52.715  INFO 6918 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-07 01:04:52.733  INFO 6918 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-07 01:04:52.742  INFO 6918 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-02-07 01:04:52.784  INFO 6918 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumerGroup10
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.zekelabs.microserviceskafka.deserializer.CustomDeserializer
+
+2020-02-07 01:04:52.830  INFO 6918 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-07 01:04:52.849  INFO 6918 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-07 01:04:52.844  INFO 6918 --- [erGroup11-0-C-1] org.apache.kafka.clients.Metadata        : Cluster ID: lPdIPz4LRguGkkkYMiE3Yw
+2020-02-07 01:04:52.850  INFO 6918 --- [erGroup11-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=consumerGroup11] Discovered group coordinator edyoda-VirtualBox:9092 (id: 2147483647 rack: null)
+2020-02-07 01:04:52.890  INFO 6918 --- [           main] org.apache.kafka.clients.Metadata        : Cluster ID: lPdIPz4LRguGkkkYMiE3Yw
+2020-02-07 01:04:52.900  INFO 6918 --- [erGroup11-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=consumerGroup11] Revoking previously assigned partitions []
+2020-02-07 01:04:52.903  INFO 6918 --- [erGroup11-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2020-02-07 01:04:52.903  INFO 6918 --- [erGroup11-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=consumerGroup11] (Re-)joining group
+2020-02-07 01:04:52.934  INFO 6918 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumerGroup10
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.zekelabs.microserviceskafka.deserializer.CustomDeserializer
+
+2020-02-07 01:04:53.019  INFO 6918 --- [erGroup11-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=consumerGroup11] Successfully joined group with generation 18
+2020-02-07 01:04:53.034  INFO 6918 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-07 01:04:53.035  INFO 6918 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-07 01:04:53.035  INFO 6918 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-02-07 01:04:53.048  INFO 6918 --- [erGroup11-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=consumerGroup11] Setting newly assigned partitions [FR-0]
+2020-02-07 01:04:53.081  INFO 6918 --- [erGroup11-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [FR-0]
+2020-02-07 01:04:53.086  INFO 6918 --- [erGroup10-0-C-1] org.apache.kafka.clients.Metadata        : Cluster ID: lPdIPz4LRguGkkkYMiE3Yw
+2020-02-07 01:04:53.104  INFO 6918 --- [erGroup10-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-4, groupId=consumerGroup10] Discovered group coordinator edyoda-VirtualBox:9092 (id: 2147483647 rack: null)
+2020-02-07 01:04:53.131  INFO 6918 --- [erGroup10-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-4, groupId=consumerGroup10] Revoking previously assigned partitions []
+2020-02-07 01:04:53.131  INFO 6918 --- [erGroup10-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2020-02-07 01:04:53.131  INFO 6918 --- [erGroup10-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-4, groupId=consumerGroup10] (Re-)joining group
+2020-02-07 01:04:53.163  INFO 6918 --- [erGroup10-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-4, groupId=consumerGroup10] Successfully joined group with generation 18
+2020-02-07 01:04:53.174  INFO 6918 --- [erGroup10-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-4, groupId=consumerGroup10] Setting newly assigned partitions [UK-0]
+2020-02-07 01:04:53.178  INFO 6918 --- [erGroup10-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [UK-0]
+2020-02-07 01:04:53.378  INFO 6918 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-02-07 01:04:53.393  INFO 6918 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2020-02-07 01:04:53.402  INFO 6918 --- [           main] c.z.m.MicroServicesConsumerUKApplication : Started MicroServicesConsumerUKApplication in 22.679 seconds (JVM running for 24.672)
+2020-02-07 01:05:20.588  INFO 6918 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-02-07 01:05:20.590  INFO 6918 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-02-07 01:05:20.595  INFO 6918 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-02-07 01:05:20.597  INFO 6918 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-02-07 01:05:20.597  INFO 6918 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-02-07 01:05:20.597  INFO 6918 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-02-07 01:05:20.597  INFO 6918 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-02-07 01:05:20.943  INFO 6918 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-02-07 01:06:44.992  INFO 6918 --- [nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-07 01:06:44.993  INFO 6918 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-07 01:06:45.047  INFO 6918 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 46 ms
+2020-02-07 01:06:49.257  INFO 6918 --- [nio-8085-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class com.zekelabs.microserviceskafka.serializer.CustomSerializer
+
+2020-02-07 01:06:49.347  INFO 6918 --- [nio-8085-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-07 01:06:49.351  INFO 6918 --- [nio-8085-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-07 01:06:49.380  INFO 6918 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : Cluster ID: lPdIPz4LRguGkkkYMiE3Yw
+2020-02-07 01:06:49.629  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536365.0","stockCode":"84406B","description":"CREAM CUPID HEARTS COAT HANGER","quantity":8,"invoiceDate":"40513.3513888889","unitPrice":2.75,"customerID":"17850.0","country":"United Kingdom"}
+2020-02-07 01:06:49.736  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536365.0","stockCode":"84029G","description":"KNITTED UNION FLAG HOT WATER BOTTLE","quantity":6,"invoiceDate":"40513.3513888889","unitPrice":3.39,"customerID":"17850.0","country":"United Kingdom"}
+2020-02-07 01:06:49.738  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536365.0","stockCode":"84029E","description":"RED WOOLLY HOTTIE WHITE HEART.","quantity":6,"invoiceDate":"40513.3513888889","unitPrice":3.39,"customerID":"17850.0","country":"United Kingdom"}
+2020-02-07 01:06:49.738  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536365.0","stockCode":"22752.0","description":"SET 7 BABUSHKA NESTING BOXES","quantity":2,"invoiceDate":"40513.3513888889","unitPrice":7.65,"customerID":"17850.0","country":"United Kingdom"}
+2020-02-07 01:06:49.739  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536365.0","stockCode":"21730.0","description":"GLASS STAR FROSTED T-LIGHT HOLDER","quantity":6,"invoiceDate":"40513.3513888889","unitPrice":4.25,"customerID":"17850.0","country":"United Kingdom"}
+2020-02-07 01:06:49.743  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536366.0","stockCode":"22633.0","description":"HAND WARMER UNION JACK","quantity":6,"invoiceDate":"40513.3527777778","unitPrice":1.85,"customerID":"17850.0","country":"United Kingdom"}
+2020-02-07 01:06:49.750  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536366.0","stockCode":"22632.0","description":"HAND WARMER RED POLKA DOT","quantity":6,"invoiceDate":"40513.3527777778","unitPrice":1.85,"customerID":"17850.0","country":"United Kingdom"}
+2020-02-07 01:06:49.914  INFO 6918 --- [erGroup11-0-C-1] c.z.m.MicroServicesConsumerFRApplication : Received: {"invoiceNumber":"536370.0","stockCode":"22728.0","description":"ALARM CLOCK BAKELIKE PINK","quantity":24,"invoiceDate":"40513.3645833333","unitPrice":3.75,"customerID":"12583.0","country":"France"}
+2020-02-07 01:06:49.915  INFO 6918 --- [erGroup11-0-C-1] c.z.m.MicroServicesConsumerFRApplication : Received: {"invoiceNumber":"536370.0","stockCode":"22727.0","description":"ALARM CLOCK BAKELIKE RED ","quantity":24,"invoiceDate":"40513.3645833333","unitPrice":3.75,"customerID":"12583.0","country":"France"}
+2020-02-07 01:06:49.921  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"84879.0","description":"ASSORTED COLOUR BIRD ORNAMENT","quantity":32,"invoiceDate":"40513.3569444444","unitPrice":1.69,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:49.921  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"22745.0","description":"POPPY'S PLAYHOUSE BEDROOM ","quantity":6,"invoiceDate":"40513.3569444444","unitPrice":2.1,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:49.922  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"22748.0","description":"POPPY'S PLAYHOUSE KITCHEN","quantity":6,"invoiceDate":"40513.3569444444","unitPrice":2.1,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:49.922  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"22749.0","description":"FELTCRAFT PRINCESS CHARLOTTE DOLL","quantity":8,"invoiceDate":"40513.3569444444","unitPrice":3.75,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:49.922  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"22310.0","description":"IVORY KNITTED MUG COSY ","quantity":6,"invoiceDate":"40513.3569444444","unitPrice":1.65,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:49.929  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"84969.0","description":"BOX OF 6 ASSORTED COLOUR TEASPOONS","quantity":6,"invoiceDate":"40513.3569444444","unitPrice":4.25,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:49.930  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"22623.0","description":"BOX OF VINTAGE JIGSAW BLOCKS ","quantity":3,"invoiceDate":"40513.3569444444","unitPrice":4.95,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:49.931  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"22622.0","description":"BOX OF VINTAGE ALPHABET BLOCKS","quantity":2,"invoiceDate":"40513.3569444444","unitPrice":9.95,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:49.933  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"21754.0","description":"HOME BUILDING BLOCK WORD","quantity":3,"invoiceDate":"40513.3569444444","unitPrice":5.95,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:49.940  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"21755.0","description":"LOVE BUILDING BLOCK WORD","quantity":3,"invoiceDate":"40513.3569444444","unitPrice":5.95,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:49.947  INFO 6918 --- [erGroup11-0-C-1] c.z.m.MicroServicesConsumerFRApplication : Received: {"invoiceNumber":"536370.0","stockCode":"22726.0","description":"ALARM CLOCK BAKELIKE GREEN","quantity":12,"invoiceDate":"40513.3645833333","unitPrice":3.75,"customerID":"12583.0","country":"France"}
+2020-02-07 01:06:49.952  INFO 6918 --- [erGroup11-0-C-1] c.z.m.MicroServicesConsumerFRApplication : Received: {"invoiceNumber":"536370.0","stockCode":"21724.0","description":"PANDA AND BUNNIES STICKER SHEET","quantity":12,"invoiceDate":"40513.3645833333","unitPrice":0.85,"customerID":"12583.0","country":"France"}
+Total messages sent to Kafka Broker:35
+2020-02-07 01:06:49.984  INFO 6918 --- [erGroup11-0-C-1] c.z.m.MicroServicesConsumerFRApplication : Received: {"invoiceNumber":"536370.0","stockCode":"21883.0","description":"STARS GIFT TAPE ","quantity":24,"invoiceDate":"40513.3645833333","unitPrice":0.65,"customerID":"12583.0","country":"France"}
+2020-02-07 01:06:49.987  INFO 6918 --- [erGroup11-0-C-1] c.z.m.MicroServicesConsumerFRApplication : Received: {"invoiceNumber":"536370.0","stockCode":"10002.0","description":"INFLATABLE POLITICAL GLOBE ","quantity":48,"invoiceDate":"40513.3645833333","unitPrice":0.85,"customerID":"12583.0","country":"France"}
+2020-02-07 01:06:50.032  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"21777.0","description":"RECIPE BOX WITH METAL HEART","quantity":4,"invoiceDate":"40513.3569444444","unitPrice":7.95,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:50.032  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536367.0","stockCode":"48187.0","description":"DOORMAT NEW ENGLAND","quantity":4,"invoiceDate":"40513.3569444444","unitPrice":7.95,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:50.035  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536368.0","stockCode":"22960.0","description":"JAM MAKING SET WITH JARS","quantity":6,"invoiceDate":"40513.3569444444","unitPrice":4.25,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:50.036  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536368.0","stockCode":"22913.0","description":"RED COAT RACK PARIS FASHION","quantity":3,"invoiceDate":"40513.3569444444","unitPrice":4.95,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:50.037  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536368.0","stockCode":"22912.0","description":"YELLOW COAT RACK PARIS FASHION","quantity":3,"invoiceDate":"40513.3569444444","unitPrice":4.95,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:50.039  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536368.0","stockCode":"22914.0","description":"BLUE COAT RACK PARIS FASHION","quantity":3,"invoiceDate":"40513.3569444444","unitPrice":4.95,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:50.032  INFO 6918 --- [erGroup11-0-C-1] c.z.m.MicroServicesConsumerFRApplication : Received: {"invoiceNumber":"536370.0","stockCode":"21791.0","description":"VINTAGE HEADS AND TAILS CARD GAME ","quantity":24,"invoiceDate":"40513.3645833333","unitPrice":1.25,"customerID":"12583.0","country":"France"}
+2020-02-07 01:06:50.041  INFO 6918 --- [erGroup11-0-C-1] c.z.m.MicroServicesConsumerFRApplication : Received: {"invoiceNumber":"536370.0","stockCode":"21035.0","description":"SET/2 RED RETROSPOT TEA TOWELS ","quantity":18,"invoiceDate":"40513.3645833333","unitPrice":2.95,"customerID":"12583.0","country":"France"}
+2020-02-07 01:06:50.041  INFO 6918 --- [erGroup11-0-C-1] c.z.m.MicroServicesConsumerFRApplication : Received: {"invoiceNumber":"536370.0","stockCode":"22326.0","description":"ROUND SNACK BOXES SET OF4 WOODLAND ","quantity":24,"invoiceDate":"40513.3645833333","unitPrice":2.95,"customerID":"12583.0","country":"France"}
+2020-02-07 01:06:50.043  INFO 6918 --- [erGroup10-0-C-1] c.z.m.MicroServicesConsumerUKApplication : Received: {"invoiceNumber":"536369.0","stockCode":"21756.0","description":"BATH BUILDING BLOCK WORD","quantity":3,"invoiceDate":"40513.3576388889","unitPrice":5.95,"customerID":"13047.0","country":"United Kingdom"}
+2020-02-07 01:06:50.063  INFO 6918 --- [erGroup11-0-C-1] c.z.m.MicroServicesConsumerFRApplication : Received: {"invoiceNumber":"536370.0","stockCode":"22629.0","description":"SPACEBOY LUNCH BOX ","quantity":24,"invoiceDate":"40513.3645833333","unitPrice":1.95,"customerID":"12583.0","country":"France"}
+
+Sale Report for Country: UK
+=================================
+StockCode		Sale
+=================================
+84406B			22
+22633.0			11.1
+22622.0			19.9
+22623.0			14.85
+21730.0			25.5
+84879.0			54.08
+84029E			20.34
+22632.0			11.1
+21754.0			17.85
+84029G			20.34
+21755.0			17.85
+48187.0			31.8
+21777.0			31.8
+21756.0			17.85
+22745.0			12.6
+22960.0			25.5
+22748.0			12.6
+22749.0			30
+84969.0			25.5
+22912.0			14.85
+22913.0			14.85
+22914.0			14.85
+22310.0			9.9
+22752.0			15.3
+
+Sale Report for Country: FR
+=================================
+StockCode		Sale
+=================================
+10002.0			40.8
+21883.0			15.6
+21791.0			30
+21035.0			53.1
+22726.0			45
+22629.0			46.8
+22727.0			90
+22728.0			90
+22326.0			70.8
+21724.0			10.2
+
