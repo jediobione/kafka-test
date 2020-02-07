@@ -1,0 +1,9 @@
+{"type": "record",
+ "name": "TransactionMessage",
+ "fields": [
+     {"name": "description", "type": "string"},
+     {"name": "quantity", "type": ["string", "null"]},
+     {"name": "unitPrice", "type": ["string", "null"]},
+     {"name": "customerId", "type": ["string", "null"],"default": "None"}
+ ]
+}

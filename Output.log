@@ -1,0 +1,295 @@
+===============================
+Start Confluent Zookeeper
+===============================
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroConsumer-V1$ cd ~
+(base) edyoda@edyoda-VirtualBox:~$ sudo systemctl start confluent-zookeeper
+[sudo] password for edyoda: 
+(base) edyoda@edyoda-VirtualBox:~$ sudo systemctl status confluent-zookeeper
+● confluent-zookeeper.service - Apache Kafka - ZooKeeper
+   Loaded: loaded (/lib/systemd/system/confluent-zookeeper.service; disabled; ve
+   Active: active (running) since Fri 2020-02-07 11:06:42 IST; 7s ago
+     Docs: http://docs.confluent.io/
+ Main PID: 9163 (java)
+    Tasks: 22 (limit: 4668)
+   CGroup: /system.slice/confluent-zookeeper.service
+           └─9163 java -Xmx512M -Xms512M -server -XX:+UseG1GC -XX:MaxGCPauseMill
+
+Feb 07 11:06:44 edyoda-VirtualBox zookeeper-server-start[9163]: [2020-02-07 11:0
+Feb 07 11:06:44 edyoda-VirtualBox zookeeper-server-start[9163]: [2020-02-07 11:0
+Feb 07 11:06:44 edyoda-VirtualBox zookeeper-server-start[9163]: [2020-02-07 11:0
+Feb 07 11:06:44 edyoda-VirtualBox zookeeper-server-start[9163]: [2020-02-07 11:0
+Feb 07 11:06:44 edyoda-VirtualBox zookeeper-server-start[9163]: [2020-02-07 11:0
+Feb 07 11:06:44 edyoda-VirtualBox zookeeper-server-start[9163]: [2020-02-07 11:0
+Feb 07 11:06:44 edyoda-VirtualBox zookeeper-server-start[9163]: [2020-02-07 11:0
+Feb 07 11:06:44 edyoda-VirtualBox zookeeper-server-start[9163]: [2020-02-07 11:0
+Feb 07 11:06:44 edyoda-VirtualBox zookeeper-server-start[9163]: [2020-02-07 11:0
+Feb 07 11:06:44 edyoda-VirtualBox zookeeper-server-start[9163]: [2020-02-07 11:0
+lines 1-19/19 (END)
+
+
+===============================
+Start Confluent Kafka 
+===============================
+(base) edyoda@edyoda-VirtualBox:~$ sudo systemctl start confluent-kafka
+[sudo] password for edyoda: 
+Sorry, try again.
+[sudo] password for edyoda: 
+(base) edyoda@edyoda-VirtualBox:~$ sudo systemctl status confluent-kafka
+● confluent-kafka.service - Apache Kafka - broker
+   Loaded: loaded (/lib/systemd/system/confluent-kafka.service; disabled; vendor preset: enabled)
+   Active: active (running) since Fri 2020-02-07 11:08:16 IST; 5s ago
+     Docs: http://docs.confluent.io/
+ Main PID: 9256 (java)
+    Tasks: 37 (limit: 4668)
+   CGroup: /system.slice/confluent-kafka.service
+           └─9256 java -Xmx1G -Xms1G -server -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:+ExplicitGCInvokesConcurrent -Djava.awt.headless=true -Xlog:gc*:file=/
+
+Feb 07 11:08:21 edyoda-VirtualBox kafka-server-start[9256]: [2020-02-07 11:08:21,407] INFO [Log partition=__consumer_offsets-10, dir=/var/lib/kafka] Completed load of log with 1 segments, log st
+Feb 07 11:08:21 edyoda-VirtualBox kafka-server-start[9256]: [2020-02-07 11:08:21,425] INFO [Log partition=__consumer_offsets-25, dir=/var/lib/kafka] Loading producer state till offset 0 with mes
+Feb 07 11:08:21 edyoda-VirtualBox kafka-server-start[9256]: [2020-02-07 11:08:21,426] INFO [Log partition=__consumer_offsets-25, dir=/var/lib/kafka] Completed load of log with 1 segments, log st
+Feb 07 11:08:21 edyoda-VirtualBox kafka-server-start[9256]: [2020-02-07 11:08:21,437] INFO [Log partition=__consumer_offsets-35, dir=/var/lib/kafka] Loading producer state till offset 0 with mes
+Feb 07 11:08:21 edyoda-VirtualBox kafka-server-start[9256]: [2020-02-07 11:08:21,440] INFO [Log partition=__consumer_offsets-35, dir=/var/lib/kafka] Completed load of log with 1 segments, log st
+Feb 07 11:08:21 edyoda-VirtualBox kafka-server-start[9256]: [2020-02-07 11:08:21,481] INFO [Log partition=__consumer_offsets-2, dir=/var/lib/kafka] Loading producer state till offset 0 with mess
+Feb 07 11:08:21 edyoda-VirtualBox kafka-server-start[9256]: [2020-02-07 11:08:21,482] INFO [Log partition=__consumer_offsets-2, dir=/var/lib/kafka] Completed load of log with 1 segments, log sta
+Feb 07 11:08:21 edyoda-VirtualBox kafka-server-start[9256]: [2020-02-07 11:08:21,529] INFO [Log partition=AvroClicks-0, dir=/var/lib/kafka] Loading producer state till offset 5 with message form
+Feb 07 11:08:21 edyoda-VirtualBox kafka-server-start[9256]: [2020-02-07 11:08:21,531] INFO [ProducerStateManager partition=AvroClicks-0] Loading producer state from snapshot file '/var/lib/kafka
+Feb 07 11:08:21 edyoda-VirtualBox kafka-server-start[9256]: [2020-02-07 11:08:21,534] INFO [Log partition=AvroClicks-0, dir=/var/lib/kafka] Completed load of log with 1 segments, log start offse
+
+(base) edyoda@edyoda-VirtualBox:~$ 
+
+
+===============================
+Start Confluent Schema Registry/Server
+===============================
+(base) edyoda@edyoda-VirtualBox:~$ sudo systemctl start confluent-schema-registry
+[sudo] password for edyoda: 
+(base) edyoda@edyoda-VirtualBox:~$ sudo systemctl status confluent-schema-registry
+● confluent-schema-registry.service - RESTful Avro schema registry for Apache Kafka
+   Loaded: loaded (/lib/systemd/system/confluent-schema-registry.service; disabled; vendor preset: enabled)
+   Active: active (running) since Fri 2020-02-07 11:08:47 IST; 9s ago
+     Docs: http://docs.confluent.io/
+ Main PID: 9392 (java)
+    Tasks: 32 (limit: 4668)
+   CGroup: /system.slice/confluent-schema-registry.service
+           └─9392 java -Xmx512M -server -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:+ExplicitGCInvokesConcurrent -Djava.awt.headless=true -Dcom.sun.management.
+
+Feb 07 11:08:56 edyoda-VirtualBox schema-registry-start[9392]: Feb 07, 2020 11:08:56 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+Feb 07 11:08:56 edyoda-VirtualBox schema-registry-start[9392]: WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.CompatibilityResource registered in SERVER runtime does not im
+Feb 07 11:08:56 edyoda-VirtualBox schema-registry-start[9392]: Feb 07, 2020 11:08:56 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+Feb 07 11:08:56 edyoda-VirtualBox schema-registry-start[9392]: WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.SchemasResource registered in SERVER runtime does not implemen
+Feb 07 11:08:56 edyoda-VirtualBox schema-registry-start[9392]: Feb 07, 2020 11:08:56 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+Feb 07 11:08:56 edyoda-VirtualBox schema-registry-start[9392]: WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.ConfigResource registered in SERVER runtime does not implement
+Feb 07 11:08:56 edyoda-VirtualBox schema-registry-start[9392]: Feb 07, 2020 11:08:56 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+Feb 07 11:08:56 edyoda-VirtualBox schema-registry-start[9392]: WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.ModeResource registered in SERVER runtime does not implement a
+Feb 07 11:08:56 edyoda-VirtualBox schema-registry-start[9392]: Feb 07, 2020 11:08:56 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+Feb 07 11:08:56 edyoda-VirtualBox schema-registry-start[9392]: WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.SubjectsResource registered in SERVER runtime does not impleme
+
+(base) edyoda@edyoda-VirtualBox:~$ 
+
+
+
+
+
+
+
+cd /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V1
+java -jar ../avro-tools-1.8.2.jar compile schema TransactionMessageV1.avsc .
+
+cd /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V2
+java -jar ../avro-tools-1.8.2.jar compile schema TransactionMessageV2.avsc .
+
+cd /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroConsumer-V1
+java -jar ../avro-tools-1.8.2.jar compile schema TransactionMessageV1.avsc .
+
+cd /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroConsumer-V2
+java -jar ../avro-tools-1.8.2.jar compile schema TransactionMessageV1.avsc .
+
+==============================================
+Generate TransactionMessage V1 for Producer-1
+==============================================
+(base) edyoda@edyoda-VirtualBox:~$ cd Downloads/Kafka-java-projects/Project3/AvroProducer-V1/
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V1$ java -jar ../avro-tools-1.8.2.jar compile schema TransactionMessageV1.avsc .
+Input files to compile:
+  TransactionMessageV1.avsc
+log4j:WARN No appenders could be found for logger (AvroVelocityLogChute).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+==============================================
+Generate TransactionMessage V2 for Producer-2
+==============================================
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V1$ cd /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V2
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V2$ java -jar ../avro-tools-1.8.2.jar compile schema TransactionMessageV2.avsc .
+Input files to compile:
+  TransactionMessageV2.avsc
+log4j:WARN No appenders could be found for logger (AvroVelocityLogChute).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+
+==============================================
+Generate TransactionMessage V1 for Consumer-1
+==============================================
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V2$ cd /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroConsumer-V1
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroConsumer-V1$ java -jar ../avro-tools-1.8.2.jar compile schema TransactionMessageV1.avsc .
+Input files to compile:
+  TransactionMessageV1.avsc
+log4j:WARN No appenders could be found for logger (AvroVelocityLogChute).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+==============================================
+Generate TransactionMessage V1 for Consumer-2
+==============================================
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroConsumer-V1$ cd /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroConsumer-V2
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroConsumer-V2$ java -jar ../avro-tools-1.8.2.jar compile schema TransactionMessageV2.avsc .
+Input files to compile:
+  TransactionMessageV2.avsc
+log4j:WARN No appenders could be found for logger (AvroVelocityLogChute).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroConsumer-V2$ 
+
+
+=====================================================
+Run SBT to compile and build project for Producer - 1
+=====================================================
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroConsumer-V2$ cd ../AvroProducer-V1/
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V1$ sbt run
+copying runtime jar...
+[info] Loading project definition from /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V1/project
+[info] Loading settings for project avroproducer-v1 from build.sbt ...
+[info] Set current project to AvroProject3 (in build file:/home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V1/)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[info] Compiling 2 Java sources to /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V1/target/scala-2.12/classes ...
+[info] running AvroProducerV1 
+log4j:WARN No appenders could be found for logger (org.apache.kafka.clients.producer.ProducerConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Complete
+[success] Total time: 11 s, completed 07-Feb-2020, 11:26:38 AM
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V1$ 
+
+=====================================================
+Check schema version on Schema Server for V1 message
+=====================================================
+http://localhost:8081/subjects/AvroTransaction-value/versions/1
+
+=====================================================
+Run SBT to compile and build project for Consumer - 1
+=====================================================
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V1$ cd ../AvroConsumer-V1
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroConsumer-V1$ sbt run
+[info] Loading project definition from /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroConsumer-V1/project
+[info] Loading settings for project avroconsumer-v1 from build.sbt ...
+[info] Set current project to AvroProject3 (in build file:/home/edyoda/Downloads/Kafka-java-projects/Project3/AvroConsumer-V1/)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[info] Compiling 2 Java sources to /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroConsumer-V1/target/scala-2.12/classes ...
+[info] running AvroConsumerV1 
+log4j:WARN No appenders could be found for logger (org.apache.kafka.clients.consumer.ConsumerConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+====================================================
+Re-Run SBT to generate V1 message from Producer - 1
+====================================================
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V1$ sbt run
+[info] Loading project definition from /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V1/project
+[info] Loading settings for project avroproducer-v1 from build.sbt ...
+[info] Set current project to AvroProject3 (in build file:/home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V1/)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[info] running AvroProducerV1 
+log4j:WARN No appenders could be found for logger (org.apache.kafka.clients.producer.ProducerConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Complete
+[success] Total time: 4 s, completed 07-Feb-2020, 11:38:57 AM
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V1$ 
+
+====================================
+V1 message received at Consumer - 1
+====================================
+Description=P6092 Quantity=20 Unit Price=127.25
+
+
+=====================================================
+Run SBT to compile and build project for Producer - 2
+=====================================================
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroConsumer-V2$ cd ../AvroProducer-V1/
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V1$ sbt run
+copying runtime jar...
+[info] Loading project definition from /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V1/project
+[info] Loading settings for project avroproducer-v1 from build.sbt ...
+[info] Set current project to AvroProject3 (in build file:/home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V1/)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[info] Compiling 2 Java sources to /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V1/target/scala-2.12/classes ...
+[info] running AvroProducerV1 
+log4j:WARN No appenders could be found for logger (org.apache.kafka.clients.producer.ProducerConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Complete
+[success] Total time: 11 s, completed 07-Feb-2020, 11:26:38 AM
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V1$ 
+
+=====================================================
+Check schema version on Schema Server for V2 message
+=====================================================
+http://localhost:8081/subjects/AvroTransaction-value/versions/2
+
+
+=====================================================
+Run SBT to compile and build project for Consumer - 2
+=====================================================
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroConsumer-V1$ cd ../AvroConsumer-V2/
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroConsumer-V2$ sbt run
+[info] Loading project definition from /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroConsumer-V2/project
+[info] Loading settings for project avroconsumer-v2 from build.sbt ...
+[info] Set current project to AvroProject3 (in build file:/home/edyoda/Downloads/Kafka-java-projects/Project3/AvroConsumer-V2/)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[info] Compiling 2 Java sources to /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroConsumer-V2/target/scala-2.12/classes ...
+[info] running AvroConsumerV2 
+log4j:WARN No appenders could be found for logger (org.apache.kafka.clients.consumer.ConsumerConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+
+====================================================
+Re-Run SBT to generate V1 message from Producer - 2
+====================================================
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V2$ sbt run
+[info] Loading project definition from /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V2/project
+[info] Loading settings for project avroproducer-v2 from build.sbt ...
+[info] Set current project to AvroProject3 (in build file:/home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V2/)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[warn] insecure HTTP request is deprecated 'http://packages.confluent.io/maven/'; switch to HTTPS or opt-in as ("confluent" at "http://packages.confluent.io/maven/").withAllowInsecureProtocol(true)
+[info] Compiling 1 Java source to /home/edyoda/Downloads/Kafka-java-projects/Project3/AvroProducer-V2/target/scala-2.12/classes ...
+[info] running AvroProducerV2 
+log4j:WARN No appenders could be found for logger (org.apache.kafka.clients.producer.ProducerConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Complete
+[success] Total time: 9 s, completed 07-Feb-2020, 11:52:51 AM
+(base) edyoda@edyoda-VirtualBox:~/Downloads/Kafka-java-projects/Project3/AvroProducer-V2$ 
+
+
+====================================
+V2 message received at Consumer - 2
+====================================
+Description=P4653 Quantity=18 Unit Price=103.59 Customer Id=A7403
+
+====================================
+V2 message received at Consumer - 1
+====================================
+Description=P4653 Quantity=18 Unit Price=103.59
+
