@@ -1,0 +1,49 @@
+log4j:WARN No appenders could be found for logger (org.apache.kafka.clients.producer.ProducerConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Total messages sent to Kafka Broker:35
+
+Sale Report for Country: UK
+=================================
+StockCode		Sale
+=================================
+84406B			22
+22633.0			11.1
+21730.0			25.5
+22632.0			11.1
+21754.0			17.85
+21755.0			17.85
+48187.0			31.8
+21777.0			31.8
+21756.0			17.85
+22745.0			12.6
+22748.0			12.6
+22749.0			30
+84969.0			25.5
+22912.0			14.85
+22913.0			14.85
+22914.0			14.85
+22622.0			19.9
+22623.0			14.85
+71053.0			20.34
+84879.0			54.08
+84029E			20.34
+84029G			20.34
+22960.0			25.5
+22310.0			9.9
+22752.0			15.3
+
+Sale Report for Country: FR
+=================================
+StockCode		Sale
+=================================
+10002.0			40.8
+21883.0			15.6
+21791.0			30
+21035.0			53.1
+22726.0			45
+22629.0			46.8
+22727.0			90
+22728.0			90
+22326.0			70.8
+21724.0			10.2
